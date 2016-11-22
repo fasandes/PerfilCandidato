@@ -43,16 +43,16 @@ public class EleitorHibernateDAO extends GenericHibernateDAO<Eleitor, Integer> i
 			c.add(Restrictions.eq("sexo", filtro.getSexo()));
 		}
 		if (filtro.getQtdEleitoresNoPerfilMaiorOuIgualQue() != null) {
-			c.add(Restrictions.ge("qtdEleitoresNoPerfilMaiorOuIgualQue", filtro.getQtdEleitoresNoPerfilMaiorOuIgualQue()));
+			c.add(Restrictions.ge("qtdEleitoresNoPerfil", filtro.getQtdEleitoresNoPerfilMaiorOuIgualQue()));
 		}
 		if (filtro.getQtdEleitoresNoPerfilMaiorQue() != null) {
-			c.add(Restrictions.gt("qtdEleitoresNoPerfilMaiorQue", filtro.getQtdEleitoresNoPerfilMaiorQue()));
+			c.add(Restrictions.gt("qtdEleitoresNoPerfil", filtro.getQtdEleitoresNoPerfilMaiorQue()));
 		}
 		if (filtro.getQtdEleitoresNoPerfilMenorOuIgualQue() != null) {
-			c.add(Restrictions.le("qtdEleitoresNoPerfilMenorOuIgualQue", filtro.getQtdEleitoresNoPerfilMenorOuIgualQue()));
+			c.add(Restrictions.le("qtdEleitoresNoPerfil", filtro.getQtdEleitoresNoPerfilMenorOuIgualQue()));
 		}
 		if (filtro.getQtdEleitoresNoPerfilMenorQue() != null) {
-			c.add(Restrictions.lt("qtdEleitoresNoPerfilMenorQue", filtro.getQtdEleitoresNoPerfilMenorQue()));
+			c.add(Restrictions.lt("qtdEleitoresNoPerfil", filtro.getQtdEleitoresNoPerfilMenorQue()));
 		}
 		
 		return c.list();

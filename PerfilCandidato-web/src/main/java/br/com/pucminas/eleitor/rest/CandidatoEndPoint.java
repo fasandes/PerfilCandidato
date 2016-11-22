@@ -20,7 +20,6 @@ import br.com.pucminas.eleicao.service.EscolaridadeService;
 @Path("/candidato")
 public class CandidatoEndPoint {
 	
-
 	
 	@Inject
 	private CandidatoService candidatoService;
@@ -55,6 +54,7 @@ public class CandidatoEndPoint {
 	
 
 	@GET
+	@Path("/filtro")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Candidato> buscarComFiltro(FiltroCandidatoDTO filtro) {
 		return candidatoService.buscarComFiltro(filtro);

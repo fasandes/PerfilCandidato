@@ -4,6 +4,10 @@ import br.com.pucminas.eleicao.model.Eleitor;
 
 public class FiltroEleitorDTO extends Eleitor {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer qtdEleitoresNoPerfilMaiorQue;
 	private Integer qtdEleitoresNoPerfilMenorQue;
 	

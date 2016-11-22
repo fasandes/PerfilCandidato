@@ -61,6 +61,7 @@ public class EleitorEndPoint {
 	}
 
 	@GET
+	@Path("/filtro")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Eleitor> buscarComFiltro(FiltroEleitorDTO filtro) {
 		return eleitorService.buscarComFiltro(filtro);
