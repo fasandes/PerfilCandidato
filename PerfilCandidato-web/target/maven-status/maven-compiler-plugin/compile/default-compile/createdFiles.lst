@@ -1,4 +1,5 @@
-br\com\pucminas\eleitor\Aplication.class
+br\com\pucminas\eleitor\rest\OutrosEndPoint.class
 br\com\pucminas\eleitor\rest\EleitorEndPoint.class
-br\com\pucminas\eleitor\rest\UsuarioEndPoint.class
 br\com\pucminas\eleitor\rest\CandidatoEndPoint.class
+br\com\pucminas\eleitor\Aplication.class
+br\com\pucminas\eleitor\rest\UsuarioEndPoint.class
